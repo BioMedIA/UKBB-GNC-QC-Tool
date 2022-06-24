@@ -2,6 +2,10 @@
 
 SegQC is initially designed to do quality control of abdominal organ segmentations in population/epidemiological studies, specifically UK Biobank (UKBB) and German National Cohort (GNC). However, it can also be used as a general-purpose QC tool for checking automated segmentations in medical imaging.
 
+### Disclaimer:
+This software has been developed for research purposes only, and hence should not be used as a diagnostic tool. In no event shall the authors or distributors be liable to any direct, indirect, special, incidental, or consequential damages arising of the use of this software, its documentation, or any derivatives thereof, even if the authors have been advised of the possibility of such damage.
+
+
 ## Getting Started
 
 After obtaining the datasets (e.g. UKBB and/or GNC whole-body data) and their corresponding segmentations, SegQC can be set up in 3 easy steps.
@@ -28,8 +32,8 @@ segmentations => /root/seg_folder/subject_id/seg_basename.nii.gz
 "img_folder"     = Directory path for images
 "seg_folder"     = Directory path for segmentations/predictions
 "out_folder"     = Directory path for QC results
-"img_basenames"  = List of file basenames for images to be visualized in "img_folder"
-"seg_basename"   = File basename for segmentations 
+"img_basenames"  = List of file basenames for images to be visualized in "img_folder" (without .nii.gz extensions)
+"seg_basename"   = File basename for segmentations (without .nii.gz extension)
 "class_names"    = Names of the classes 
 "qc_options"     = List of QC result options (e.g. ["Pass", "Fail"])
 "qc_csv_basename"= File basename for QC results (e.g. "quality_check.csv")
