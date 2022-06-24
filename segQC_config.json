@@ -1,0 +1,21 @@
+{
+    "img_folder": "/home/user1/some_folder/stitched_images/",
+    "seg_folder": "/home/user1/some_folder/segmentations/",
+    "out_folder": "/home/user1/some_folder/qc_results/",
+    "img_basenames": [
+        "wat"
+    ],
+    "seg_basename": "prd",
+    "class_names": [
+        "Liver",
+        "Spleen",
+        "Left-Kidney",
+        "Right-Kidney",
+        "Pancreas"
+    ],
+    "qc_options": [
+        "Pass",
+        "Fail"
+    ],
+    "qc_csv_basename": "quality_check.csv"
+}
